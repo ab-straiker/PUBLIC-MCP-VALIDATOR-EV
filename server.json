@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "mcp-web-validator",
+  "title": "Web Validator (lightweight)",
+  "description": "Two local HTML inspection tools: SEO metadata and JSON-LD syntax.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "seo.metadata",
+      "title": "Audit SEO metadata",
+      "description": "Inspects supplied HTML locally for title, meta description, h1 headings, and image alt attributes."
+    },
+    {
+      "name": "schema.markup",
+      "title": "Validate JSON-LD syntax",
+      "description": "Parses JSON-LD script blocks in supplied HTML and reports empty blocks or JSON syntax errors."
+    }
+  ]
+}

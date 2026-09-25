@@ -1,0 +1,26 @@
+{
+  "manifest_version": "0.3",
+  "name": "mcp-web-validator",
+  "display_name": "Web Validator (lightweight)",
+  "version": "1.0.0",
+  "description": "Two local HTML inspection tools: SEO metadata and JSON-LD syntax.",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/dist/index.js"]
+    }
+  },
+  "tools": [
+    {
+      "name": "seo.metadata",
+      "description": "Inspects supplied HTML locally for title, meta description, h1 headings, and image alt attributes."
+    },
+    {
+      "name": "schema.markup",
+      "description": "Parses JSON-LD script blocks in supplied HTML and reports empty blocks or JSON syntax errors."
+    }
+  ]
+}
